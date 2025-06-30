@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu principal</title>
+    <link rel="stylesheet" href="css/styleJ.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo-psicobienestar.png" type="img/x-icon">
+</head>
+<body class="d-flex flex-column vh-100">
+
+  <!-- ========== CABECERA ========== -->
+  <header class="header-colors border-bottom">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <!-- Logos-->
+      <img src="img/logo espe 100 años variaciones-06.png" style="width: 250px; height: 70px;" href="InicioSesion.php">
+    <div class="d-flex align-items-center">
+    <!-- Notificación -->
+    <button class="btn btn-link position-relative me-3">
+        <i class="bi bi-bell fs-4 icono-verde"></i>
+        <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+    </button>
+
+    <!-- Perfil -->
+    <button class="btn btn-link position-relative me-3">
+        <i class="bi bi-person-circle fs-4 icono-verde"></i>
+        <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+    </button>
+    </div>
+  </header>
+
+  <!-- ========== NAV SECUNDARIO ========== -->
+  <nav class="navbar navbar-expand-lg navbar-custom border-bottom" style="background-color: #d9edea;">
+    <div class="container-fluid text-white">
+      <ul class="nav ms-auto">
+        
+        <!-- Dropdown Formularios -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="formulariosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Formularios
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="formulariosDropdown">
+            <li><a class="dropdown-item" href="#">Formulario A</a></li>
+            <li><a class="dropdown-item" href="#">Formulario B</a></li>
+            <li><a class="dropdown-item" href="#">Formulario C</a></li>
+          </ul>
+        </li>
+        <!-- Dropdown Encuestas -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="encuestasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Encuestas
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="encuestasDropdown">
+            <li><a class="dropdown-item" href="#">Encuesta X</a></li>
+            <li><a class="dropdown-item" href="#">Encuesta Y</a></li>
+            <li><a class="dropdown-item" href="#">Encuesta Z</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Registro de asistencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Becas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="InicioSesion.php" style="color: red;">Cerrar sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== CONTENIDO PRINCIPAL ========== -->
+  <main class="container-fluid flex-grow-1 py-1 ">
+      <!-- Zona grande donde va la imagen -->
+      <div id="servicesCarousel" class="carousel slide rounded" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3"></button>
+      </div>
+      <div class="carousel-inner shadow-sm">
+        <div class="carousel-item active">
+          <img src="img/Espe-Latacunga-centro.jpg" class="d-block w-100" alt="Psicología" style="height:500px; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block bg-white bg-opacity-75 text-start p-3 rounded">
+            <h5 class="text-success">Servicios Psicológicos</h5>
+            <p class="text-dark">Bienestar estudiantil Sede Latacunga Centro</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Psicologia.jpg" class="d-block w-100" alt="Psicología" style="height:500px; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block bg-white bg-opacity-75 text-start p-3 rounded">
+            <h5 class="text-success">Servicios Psicológicos</h5>
+            <p class="text-dark">Apoyo individual y grupal para tu salud mental.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Accidentes.jpg" class="d-block w-100" alt="Prevención de Accidentes" style="height:500px; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block bg-white bg-opacity-75 text-start p-3 rounded">
+            <h5 class="text-success">Prevención de Accidentes</h5>
+            <p class="text-dark">Reporta y gestiona incidentes con rapidez.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Becas.jpg" class="d-block w-100" alt="Becas y Ayudas" style="height:500px; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block bg-white bg-opacity-75 text-start p-3 rounded">
+            <h5 class="text-success">Becas y Ayudas</h5>
+            <p class="text-dark">Explora oportunidades de financiamiento para tus estudios.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- FRASE MOTIVADORA INFERIOR -->
+  <section class="py-1 text-center frase-colors" style="background-color: #d9edea;">
+    <div class="container">
+    <div class="logo-dev">
+      <img src="img/DEVTEAM3.png" alt="DevTeam">
+    </div>
+    </div>
+  </section>
+
+  <!-- FOOTER GENERAL -->
+  <footer class="py-4 text-center" style="background-color: #e6f4ea;">
+    <div class="container">
+      <p class="mb-1 text-dark">Contactos: 0987357111 | info@psicobienestar.com</p>
+      <small class="text-muted">PsicoBienestar v1.0.0 © 2025 DevTeam</small>
+    </div>
+  </footer>
+</body>
+</html>
