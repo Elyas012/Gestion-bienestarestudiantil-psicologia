@@ -1,8 +1,6 @@
 # Gestión-bienestar-estudiantil-psicología
 Aplicativo web para la solicitud de becas, realización de formularios (accidentes etc. )
 
-Claro, aquí tienes un pequeño `README.md` en español para tu aplicación web **PsicoBienestar**. Este archivo puede servir como presentación del proyecto en GitHub o cualquier entorno de documentación:
-
 ---
 
 # 🧠 PsicoBienestar Web App
@@ -63,5 +61,3 @@ Facilitar la interacción entre los estudiantes y el área de bienestar estudian
 * 📱 Teléfono: +593 0987357111
 
 ---
-
-¿Quieres que lo traduzca al inglés o que incluya instrucciones de instalación local con XAMPP?
